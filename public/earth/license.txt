@@ -1,0 +1,11 @@
+Model Information:
+* title:	Earth Hologram style 3D HUD
+* source:	https://sketchfab.com/3d-models/earth-hologram-style-3d-hud-fe6d480dbfac46eeaed7fa2ce0bd1e65
+* author:	tkkjee 🪲 (https://sketchfab.com/tkkjee)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Earth Hologram style 3D HUD" (https://sketchfab.com/3d-models/earth-hologram-style-3d-hud-fe6d480dbfac46eeaed7fa2ce0bd1e65) by tkkjee 🪲 (https://sketchfab.com/tkkjee) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
