@@ -5,6 +5,7 @@ import { styles } from '../styles'
 import { services } from '../constants'
 import { textVariant, fadeIn } from '../utils/motion'
 import ServiceCard from './ServiceCard'
+import { SectionWrapper } from '../hoc'
 
 const About = () => {
   return (
@@ -37,4 +38,4 @@ const About = () => {
   )
 }
 
-export default About
+export default SectionWrapper(About , "about")
