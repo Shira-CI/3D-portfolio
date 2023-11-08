@@ -1,7 +1,5 @@
 import { Html, useProgress } from '@react-three/drei'
 
-
-
 const CanvasLoader = () => {
   const { progress } = useProgress()
 
@@ -14,16 +12,9 @@ const CanvasLoader = () => {
         fontWeight: 800,
         marginTop: 40,
       }}>
-
         {progress.toFixed(2)}%
-
       </p>
-
-
     </Html>
-
-
-
   )
 }
 
