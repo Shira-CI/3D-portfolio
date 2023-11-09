@@ -8,7 +8,6 @@ const BallCanvas = ({ icon }) => {
   const groupRef = useRef()
   return (
     <Canvas
-    // frameloop='always'
       dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
     >
