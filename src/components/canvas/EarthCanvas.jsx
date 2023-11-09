@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
-import { OrbitControls, Preload, useGLTF } from '@react-three/drei'
+import { OrbitControls} from '@react-three/drei'
 import CanvasLoader from '../Loader'
 import EarthModel from './EarthModel'
 
@@ -15,7 +15,6 @@ const EarthCanvas = () => {
         near: 0.1,
         far: 200,
         position: [-4, 3, 6]
-
       }}
 
     >
