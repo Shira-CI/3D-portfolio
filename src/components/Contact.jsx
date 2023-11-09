@@ -15,11 +15,40 @@ const Contact = () => {
   })
   const [loading, setLoading] = useState(false)
 
-  const handleChange = (e) => { }
+  const handleChange = (e) => {
+    const { name, value } = e.target
+    setForm({ ...form, [name]: value })
+  }
 
-  const handleSubmit = () => { }
-
-
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    setLoading(true)
+    emailjs.send(
+      'service_ztzmfyt',
+      'template_gg61bpg',
+      {
+        from_name: form.name,
+        to_name: 'Shira',
+        from_email: form.email,
+        to_email: 'shira140@gmail.com',
+        message: form.message
+      },
+      'N1ziP8d2D8Mxr94Gb'
+    )
+      .then(() => {
+        setLoading(false)
+        alert('thanks')
+        setForm({
+          name: '',
+          email: '',
+          message: ''
+        })
+      }, (error) => {
+        setLoading(false)
+        console.log(error)
+        alert('Something went wrong')
+      })
+  }
 
   return (
     <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
