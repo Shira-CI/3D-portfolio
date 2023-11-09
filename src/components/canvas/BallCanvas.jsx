@@ -1,21 +1,23 @@
-import React, { Suspense } from 'react'
+import React, { Suspense, useRef } from 'react'
 import { Canvas } from '@react-three/fiber'
-import { OrbitControls, Preload } from '@react-three/drei'
+import { OrbitControls, Preload, Float } from '@react-three/drei'
 import CanvasLoader from '../Loader'
 import BallModel from './BallModel'
 
 const BallCanvas = ({ icon }) => {
-
+  const groupRef = useRef()
   return (
     <Canvas
-      frameloop='demans'
+    // frameloop='always'
+      dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
+        <BallModel imgUrl={icon} groupRef={groupRef} />
         <OrbitControls enableZoom={false} />
-        <BallModel imgUrl={icon} />
       </Suspense>
       <Preload all />
+
     </Canvas>
   )
 }

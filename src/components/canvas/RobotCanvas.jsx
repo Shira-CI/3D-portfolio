@@ -25,7 +25,7 @@ const RobotCanvas = () => {
 
   return (
     <Canvas
-      frameloop='always'
+      // frameloop='always'
       shadows
       camera={{ position: [-20, 10, 10], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
