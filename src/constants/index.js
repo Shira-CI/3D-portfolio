@@ -14,8 +14,6 @@ import {
     nodejs,
     mongodb,
     git,
-    figma,
-    docker,
     meta,
     starbucks,
     tesla,
@@ -24,6 +22,9 @@ import {
     jobit,
     tripguide,
     threejs,
+    sass,
+    npm,
+    vue
   } from "../assets";
   
   export const navLinks = [
@@ -55,7 +56,7 @@ import {
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "JS Developer",
       icon: creator,
     },
   ];
@@ -73,10 +74,10 @@ import {
       name: "JavaScript",
       icon: javascript,
     },
-    {
-      name: "TypeScript",
-      icon: typescript,
-    },
+    // {
+    //   name: "TypeScript",
+    //   icon: typescript,
+    // },
     {
       name: "React JS",
       icon: reactjs,
@@ -106,13 +107,18 @@ import {
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
+      name: "Sass",
+      icon: sass,
     },
     {
-      name: "docker",
-      icon: docker,
+      name: "npm",
+      icon: npm,
     },
+    {
+      name: "Vue",
+      icon: vue,
+    },
+   
   ];
   
   const experiences = [
