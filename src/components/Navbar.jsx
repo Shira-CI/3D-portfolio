@@ -14,11 +14,11 @@ const Navbar = () => {
         <Link to="/" className='flex items-center gap-2'
           onClick={() => {
             setActive('')
-            window.scrollTo(0, 0)   //בלחיצה על הלינק הדף יימשך למעלה
+            window.scrollTo(0, 0)   
 
           }}>
-          <img src={logo} alt="logo" className='w-12 h-12 object-contain' />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex'>
+          <img src={logo} alt="logo" className='w-12 h-12 object-contain rounded' />
+          <p className='text-secondary text-[18px] font-medium cursor-pointer flex ml-4'>
             Shira &nbsp; <span className='sm:block hidden'>| Fullstack Developer</span>
             </p>
         </Link>
@@ -26,8 +26,8 @@ const Navbar = () => {
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((link) => (
             <li key={link.id}
-              className={`${active === link.title ? 'text-white' : 'text-secondary'}
-              hover:text-white text-[18px] font-medium cursor-pointer`}
+              className={`${active === link.title ? 'text-hovered' : 'text-secondary'}
+              hover:text-hovered text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
               <a href={`#${link.id}`}>
@@ -47,7 +47,7 @@ const Navbar = () => {
             <ul className='list-none flex justify-end items-start flex-col gap-4'>
               {navLinks.map((link) => (
                 <li key={link.id}
-                  className={`${active === link.title ? 'text-white' : 'text-secondary'}
+                  className={`${active === link.title ? 'text-hovered' : 'text-secondary'}
               font-popins text-[16px] font-medium cursor-pointer`}
                   onClick={() => {
                     setToggleMobileMenu(!toggleMobileMenu)

@@ -8,8 +8,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#050816",
-        secondary: "#aaa6c3",
+        primary: "#0C141F",
+        // secondary: "#aaa6c3",
+        secondary: "#defffc",
+        hovered: "#73fff2",
         tertiary: "#151030",
         "black-100": "#100d25",
         "black-200": "#090325",
@@ -23,9 +25,12 @@ export default {
         xs: "450px",
       },
       backgroundImage: {
-        "hero-pattern": "url('/src/assets/herobg.png')",
-        // "hero-pattern": "url('/src/assets/hero-bg2.jpg')",
-        // "hero-pattern": "url('/src/assets/hero-bg3.jpg')"
+        // "hero-pattern": "url('/src/assets/herobg.png')",
+        // "hero-pattern": "url('/src/assets/bg1.jpg')",
+        // "hero-pattern": "url('/src/assets/bg2.jpg')",
+        // "hero-pattern": "url('/src/assets/bg3.jpg')",
+        // "hero-pattern": "url('/src/assets/bg4.jpg')",
+        "hero-pattern": "url('/src/assets/bg5.jpg')",
       },
     },
   },

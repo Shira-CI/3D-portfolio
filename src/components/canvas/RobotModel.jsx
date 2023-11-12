@@ -4,10 +4,11 @@ const RobotModel = ({ isMobile }) => {
     const robot = useGLTF('./robot/scene.gltf')
 
     return (
-        <Float
-            rotationIntensity={1}
-            floatIntensity={2}
-        >
+        // <Float
+        //     rotationIntensity={1}
+        //     floatIntensity={2}
+        // >
+        <>
             <PresentationControls
                 enabled={true}
                 global={false}
@@ -26,13 +27,14 @@ const RobotModel = ({ isMobile }) => {
                     />
                     <primitive
                         object={robot.scene}
-                        scale={isMobile ? 2 : 2.5}
-                        position={isMobile ? [0.2, -2, 0] : [3, -2.5, 2]}
+                        scale={isMobile ? 2 : 2}
+                        position={isMobile ? [0.2, -2, 0] : [0, -0.5, 5.5]}
                         rotation={[-0.01, -0.2, 0.2]}
                     />
                 </mesh>
             </PresentationControls>
-        </Float>
+         {/* </Float> */}
+         </>
     )
 }
 export default RobotModel
