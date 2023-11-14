@@ -18,7 +18,7 @@ const Navbar = () => {
 
           }}>
           <img src={logo} alt="logo" className='w-12 h-12 object-contain rounded' />
-          <p className='text-lightWhite text-[18px] font-medium cursor-pointer flex ml-4'>
+          <p className='text-white-200 text-[18px] font-medium cursor-pointer flex ml-4'>
             Shira &nbsp; <span className='sm:block hidden'>| Fullstack Developer</span>
             </p>
         </Link>

@@ -9,14 +9,13 @@ export default {
     extend: {
       colors: {
         primary: "#0C141F",
-        // secondary: "#aaa6c3",
         secondary: "#defffc",
         hovered: "#73fff2",
-        tertiary: "#151030",
+        tertiary: "#18212d",
         "black-100": "#100d25",
-        "black-200": "#090325",
+        "black-200": "#242c35",
         "white-100": "#f3f3f3",
-        lightWhite:"rgb(246, 255, 242)"
+        "white-200":"rgb(246, 255, 242)"
       },
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",
