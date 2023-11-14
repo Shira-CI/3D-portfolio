@@ -8,7 +8,7 @@ import { projects } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 import ProjectCard from './ProjectCard'
 
-const Works = () => {
+const Projects = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -44,4 +44,4 @@ const Works = () => {
   )
 }
 
-export default SectionWrapper(Works, "")
+export default SectionWrapper(Projects, "projects")
