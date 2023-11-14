@@ -182,7 +182,7 @@ const projects = [
   {
     name: "Airist",
     description:
-      "Airist is an online marketplace that connects people who want to rent out their property with people who are looking for accommodations, typically for short stays.Airbnb offers hosts a relatively easy way to earn some income from their property.Guests often find that Airist rentals are cheaper and homier than hotels.",
+"Airist is an online marketplace that connects people who want to rent out their property with people who are looking for accommodations, typically for short stays. This Fullstack app includes features like booking, checking stay availability, and providing sorting and filtering options. On the host side, you'll find a dashboard showcasing sales and orders.",
     tags: [
       {
         name: "react",
@@ -212,7 +212,7 @@ const projects = [
   {
     name: "Toys store",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A toy store, Fullstck app that highlights toys available for purchase. The application comprises both customer and seller interfaces, including product descriptions, prices, tags, sorting and filtering options, as well as customer reviews. On the seller side, functionalities include inventory management, and modification of product descriptions and prices.",
     tags: [
       {
         name: "react",
@@ -240,10 +240,10 @@ const projects = [
     site_link: "https://mister-toy-ec6o.onrender.com/"
   },
 
-    {
-    name: "Meme generator",
+  {
+    name: "Meme Generator",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+"Meme Generator Frontend App that allows users to choose from suggested images or upload their own, enabling easy editing and captioning for a touch of humor",
     tags: [
       {
         name: "ES6",
@@ -265,7 +265,7 @@ const projects = [
   {
     name: "Minesweeper",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+"Minesweeper Frontend App, a classic yet challenging game brought to life in a digital space. Test your strategic thinking and logic as you uncover hidden mines on the interactive grid.",
     tags: [
       {
         name: "ES6",

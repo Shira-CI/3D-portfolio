@@ -17,9 +17,10 @@ const ProjectCard = ({ idx, name, description, tags, image, github_link, site_li
                 className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
             >
                 <div className='relative w-full h-[230px] cursor-pointer' onClick={() => window.open(site_link, '_blank')}>
-                    <img  src={image} alt={name} className='w-full h-full object-cover rounded-2xl' />
+                    <img src={image} alt={name} className='w-full h-full object-cover rounded-2xl' />
                     <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
                         <div
+                            title='github link'
                             onClick={() => window.open(github_link, '_blank')}
                             className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'>
                             <img src={github} alt="github"
@@ -34,7 +35,7 @@ const ProjectCard = ({ idx, name, description, tags, image, github_link, site_li
                 </div>
 
                 <div className='mt-4 flex flex-wrap gap-2'>
-                    {tags.map((tag)=>(
+                    {tags.map((tag) => (
                         <p key={tag.name} className={`text-[14px] ${tag.color}`}>
                             #{tag.name}
                         </p>

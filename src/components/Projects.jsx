@@ -1,8 +1,6 @@
 import React from 'react'
-import { Tilt } from 'react-tilt'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
-import { github } from '../assets'
 import { SectionWrapper } from '../hoc'
 import { projects } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
@@ -15,30 +13,31 @@ const Projects = () => {
         <p className={styles.sectionSubText}>
           My projects        </p>
         <h2 className={styles.sectionHeadText}>
-          Projects  
+          Projects
         </h2>
       </motion.div>
 
       <div className="w-full flex">
-        <motion.p 
-        variants={fadeIn('', '', 0.1, 1)}
-        className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        <motion.p
+          variants={fadeIn('', '', 0.1, 1)}
+          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
+          The following projects demonstrate my abilities and expertise,
+          presenting real-world responsive applications developed with a focus on scalability.
+          Throughout the development process, I encountered and successfully addressed numerous challenges autonomously.
+          Some of the projects include libraries, while others are crafted using fundamental web technologies such as HTML, CSS, and JavaScript.
+          Accessing the project cards provides an opportunity to engage with live demonstrations, offering a comprehensive perspective on my experience and abilities.
+          I invite you to explore and review my projects.
         </motion.p>
       </div>
 
       <div className='mt-20 flex flex-wrap gap-7'>
-      {projects.map((project, idx)=>(
-        <ProjectCard key={`project-${idx}`}
-        {...project}
-        idx={idx}
-        />
-      ))}
+        {projects.map((project, idx) => (
+          <ProjectCard key={`project-${idx}`}
+            {...project}
+            idx={idx}
+          />
+        ))}
       </div>
     </>
   )
