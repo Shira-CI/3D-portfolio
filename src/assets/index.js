@@ -27,9 +27,10 @@ import shopify from "./company/shopify.png"
 import starbucks from "./company/starbucks.png"
 import tesla from "./company/tesla.png"
 
-import carrent from "./carrent.png"
-import jobit from "./jobit.png"
-import tripguide from "./tripguide.png"
+import toys from './toys.jpg'
+import air from './air.jpg'
+import meme from './meme.jpg'
+import minesweeper from './minesweeper.jpg'
 
 export {
   logo,
@@ -58,7 +59,8 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
-  jobit,
-  tripguide,
+  toys,
+  air,
+  meme,
+  minesweeper,
 } 
