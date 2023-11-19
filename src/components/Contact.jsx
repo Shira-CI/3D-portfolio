@@ -37,7 +37,7 @@ const Contact = () => {
     )
       .then(() => {
         setLoading(false)
-        alert('thanks')
+        alert('Thanks')
         setForm({
           name: '',
           email: '',
