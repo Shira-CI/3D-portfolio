@@ -181,7 +181,7 @@ const projects = [
   {
     name: "Airist",
     description:
-      "Airist is an online marketplace that connects people who want to rent out their property with people who are looking for accommodations, typically for short stays. This Fullstack app includes features like booking, checking stay availability, and providing sorting and filtering options. On the host side, you'll find a dashboard showcasing sales and orders.",
+      "Airist serves as a fully functional Airbnb clone, functioning as an online marketplace connecting individuals offering their properties for short-term rentals with those seeking accommodations. This comprehensive Fullstack app boasts essential features such as booking, checking stay availability, and robust sorting and filtering options. For hosts, the platform provides a dedicated dashboard showcasing sales and orders.",
     tags: [
       {
         name: "react",
@@ -209,7 +209,7 @@ const projects = [
     site_link: "https://airist-9s0i.onrender.com/"
   },
   {
-    name: "Toys store",
+    name: "Mister Toy",
     description:
       "A toy store, Fullstck app that highlights toys available for purchase. The application comprises both customer and seller interfaces, including product descriptions, prices, tags, sorting and filtering options, as well as customer reviews. On the seller side, functionalities include inventory management, and modification of product descriptions and prices.",
     tags: [

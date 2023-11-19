@@ -27,7 +27,7 @@ const Projects = () => {
           Throughout the development process, I encountered and successfully addressed numerous challenges autonomously.
           Some of the projects include libraries, while others are crafted using fundamental web technologies such as HTML, CSS, and JavaScript.
           Accessing the project cards provides an opportunity to engage with live demonstrations, offering a comprehensive perspective on my experience and abilities.
-          I invite you to explore and review my projects.
+         <br/> I invite you to explore and review my projects 🙂
         </motion.p>
       </div>
 
