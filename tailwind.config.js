@@ -24,12 +24,7 @@ export default {
         xs: "450px",
       },
       backgroundImage: {
-        // "hero-pattern": "url('/src/assets/herobg.png')",
-        // "hero-pattern": "url('/src/assets/bg1.jpg')",
-        // "hero-pattern": "url('/src/assets/bg2.jpg')",
-        // "hero-pattern": "url('/src/assets/bg3.jpg')",
-        // "hero-pattern": "url('/src/assets/bg4.jpg')",
-        "hero-pattern": "url('/src/assets/bg5.jpg')",
+        "hero-pattern": "url('/src/assets/bg.jpg')",
       },
     },
   },

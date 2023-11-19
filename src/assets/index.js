@@ -22,11 +22,6 @@ import sass from "./tech/sass.png"
 import npm from "./tech/npm.png"
 import vue from "./tech/vue.png"
 
-import meta from "./company/meta.png"
-import shopify from "./company/shopify.png"
-import starbucks from "./company/starbucks.png"
-import tesla from "./company/tesla.png"
-
 import toys from './toys.jpg'
 import air from './air.jpg'
 import meme from './meme.jpg'
@@ -55,10 +50,6 @@ export {
   threejs,
   npm,
   vue,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
   toys,
   air,
   meme,
