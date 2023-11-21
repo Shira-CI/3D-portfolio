@@ -1,11 +1,17 @@
-import React, { Suspense } from 'react'
+import React, { Suspense, useRef } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls} from '@react-three/drei'
 import CanvasLoader from '../Loader'
 import EarthModel from './EarthModel'
+import useIsInViewPort from '../../hooks/UseIsInViewPort'
+
 
 const EarthCanvas = () => {
+  const canvasRef = useRef(null)
+  const isIntersecting = useIsInViewPort(canvasRef)
   return (
+    <span ref={canvasRef} >
+    {isIntersecting && (
     <Canvas
       shadows
       frameloop='demand'
@@ -28,6 +34,8 @@ const EarthCanvas = () => {
         <EarthModel />
       </Suspense>
     </Canvas>
+ )}
+   </span>
   )
 }
 

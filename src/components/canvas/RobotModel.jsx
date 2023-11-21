@@ -29,6 +29,7 @@ const RobotModel = ({ isMobile }) => {
                         object={robot.scene}
                         scale={isMobile ? 2 : 2}
                         position={isMobile ? [0.2, -2, 0] : [0, -1.2, 3]}
+                        // position={isMobile ? [0.2, -2, 0] : [0, -, 0]}
                         rotation={[-0.01, -0.2, 0.2]}
                     />
                 </mesh>
