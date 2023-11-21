@@ -3,7 +3,6 @@ import { Decal, Float, useTexture, PresentationControls } from '@react-three/dre
 
 const BallModel = ({ imgUrl }) => {
   const [decal] = useTexture([imgUrl])
-
   return (
     <Float speed={2}
       rotationIntensity={2}
@@ -38,7 +37,6 @@ const BallModel = ({ imgUrl }) => {
         </mesh>
       </PresentationControls>
     </Float>
-
   )
 }
 

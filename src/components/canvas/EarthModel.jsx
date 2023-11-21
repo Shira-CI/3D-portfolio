@@ -3,6 +3,7 @@ import {PresentationControls, useGLTF} from '@react-three/drei'
 
 const EarthModel = () => {
     const earth = useGLTF('./planet/scene.gltf')
+    // console.log('render EarthModel')
 
   return (
     <PresentationControls

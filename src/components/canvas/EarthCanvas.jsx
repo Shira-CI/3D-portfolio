@@ -1,41 +1,27 @@
 import React, { Suspense, useRef } from 'react'
 import { Canvas } from '@react-three/fiber'
-import { OrbitControls} from '@react-three/drei'
+import { OrbitControls } from '@react-three/drei'
 import CanvasLoader from '../Loader'
 import EarthModel from './EarthModel'
+import RobotModel from './RobotModel'
 import useIsInViewPort from '../../hooks/UseIsInViewPort'
+import DynCanvas from './DynCanvas'
 
 
 const EarthCanvas = () => {
-  const canvasRef = useRef(null)
-  const isIntersecting = useIsInViewPort(canvasRef)
-  return (
-    <span ref={canvasRef} >
-    {isIntersecting && (
-    <Canvas
-      shadows
-      frameloop='demand'
-      gl={{ preserveDrawingBuffer: true }}
-      camera={{
-        fov: 45,
-        near: 0.1,
-        far: 200,
-        position: [-4, 3, 6]
-      }}
+  const earthProps = {
+    camera: {
+      fov: 45,
+      near: 0.1,
+      far: 200,
+      position: [-4, 3, 6]
+    },
+    gl: { preserveDrawingBuffer: true },
+    model: 'earth'
+  }
 
-    >
-      <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls
-          autoRotate
-          enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
-        />
-        <EarthModel />
-      </Suspense>
-    </Canvas>
- )}
-   </span>
+  return (
+    <DynCanvas props={earthProps} />
   )
 }
 
