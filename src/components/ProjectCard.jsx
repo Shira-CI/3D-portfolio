@@ -7,7 +7,7 @@ import { github } from '../assets'
 const ProjectCard = ({ idx, name, description, tags, image, github_link, site_link }) => {
 
     return (
-        <motion.div variants={fadeIn('up', 'spring', idx * 0.5, 0.75)}>
+        <motion.div initial={false} variants={fadeIn('up', 'spring', idx * 0.5, 0.75)}>
             <Tilt
                 options={{
                     max: 45,

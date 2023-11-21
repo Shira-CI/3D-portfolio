@@ -1,15 +1,17 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import { SectionWrapper } from '../hoc'
 import { projects } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 import ProjectCard from './ProjectCard'
+import useIsInViewPort from '../hooks/UseIsInViewPort'
+
 
 const Projects = () => {
   return (
-    <>
-      <motion.div variants={textVariant()}>
+ <>
+      <motion.div initial={false} variants={textVariant()}>
         <p className={styles.sectionSubText}>
           My projects        </p>
         <h2 className={styles.sectionHeadText}>
@@ -18,7 +20,7 @@ const Projects = () => {
       </motion.div>
 
       <div className="w-full flex">
-        <motion.p
+        <motion.p initial={false}
           variants={fadeIn('', '', 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
@@ -39,7 +41,7 @@ const Projects = () => {
           />
         ))}
       </div>
-    </>
+      </>
   )
 }
 
