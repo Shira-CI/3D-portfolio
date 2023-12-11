@@ -12,10 +12,10 @@ const Projects = () => {
   return (
  <>
       <motion.div initial={false} variants={textVariant()}>
-        <p className={styles.sectionSubText}>
-          My projects        </p>
+        {/* <p className={styles.sectionSubText}>
+          My projects        </p> */}
         <h2 className={styles.sectionHeadText}>
-          Projects
+        My projects
         </h2>
       </motion.div>
 
